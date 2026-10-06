@@ -22,11 +22,15 @@ function Login() {
                         <button type="submit" className="botao">Entrar</button>
                         <button type="button" className="botao">Criar nova conta</button>
                     </div>  
+                
+ 
+                    <div className="esqueci-senha">
+                        <a href="#">Esqueci minha senha</a>
+                    </div>
                 </form>
 
-                <a href="#">Esqueci minha senha</a>
             </div>
-        </section>
+        </section> 
     )
 }
 
