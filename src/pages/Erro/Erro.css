@@ -1,0 +1,55 @@
+.erro {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1.5rem;
+}
+
+.erro-container {
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.erro-container strong {
+    color: var(--verde-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.9rem;
+}
+
+.erro-container h1 {
+    color: var(--texto-titulo);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.erro-container p {
+    color: var(--texto-corpo);
+    font-family: var(--fonte-principal);
+    line-height: 1.6;
+}
+
+.erro-link {
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    background-color: var(--verde-principal);
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    transition: background-color 0.25s ease;
+}
+
+.erro-link:hover {
+    background-color: var(--verde-escuro);
+}
