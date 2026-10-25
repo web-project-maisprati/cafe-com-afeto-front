@@ -40,3 +40,9 @@ body {
     color: var(--texto-corpo);
     transition: background-color 0.3s, color 0.3s;
 }
+
+ul{list-style-type: none;
+color: var(--branco);}
+a{text-decoration: none;
+color: var(--branco);}
+

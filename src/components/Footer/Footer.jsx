@@ -1,36 +1,41 @@
+import {Link} from 'react-router-dom'
 import './Footer.css'
-import { FaLocationDot, FaPhone, FaEnvelope, FaRegCopyright } from "react-icons/fa6"
+import { FaLocationDot, FaPhone, FaEnvelope, FaInstagram, FaRegCopyright } from "react-icons/fa6"
 
 function Footer() {
+
+  
+
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
           <strong>Café com Afeto</strong>
           <div className='footer-text'>
-            <p>Conetamos doadores
-                e voluntários a famílias
-                que mais precisam,
-                com transparência 
-                em cada etapa.</p>
+            <p>Conectamos doadores
+              e voluntários a pessoas
+              que mais precisam,
+              com transparência
+              em cada etapa.</p>
           </div>
         </div>
         <div className='footer-menu'>
           <strong>Institucional</strong>
           <ul>
-            <li>Sobre Nós</li>
-            <li>Nossa Missão</li>
-            <li>Transparência</li>
-            <li>Prestação de Contas</li>
+            <li><Link to="/sobre">Sobre Nós</Link></li>
+            <li><Link to="/missão">Nossa Missão</Link></li>
+            <li><Link to="/transparencia">Transparência</Link></li>
+            <li><Link to="/Prestação de contas">Prestação de Contas</Link></li>
           </ul>
         </div>
         <div className='footer-menu-ajuda'>
           <strong>Como Ajudar</strong>
           <ul>
-            <li>Fazer uma Doação</li>
-            <li>Ser Voluntário</li>
-            <li>Campanhas Ativas</li>
-            <li>Histórias de Impacto</li>
+            <li><Link to="/doacao">Fazer uma Doação</Link></li>
+            <li><Link to="/voluntario">Ser voluntário</Link></li>
+            
+            <li><Link to="/home">Campanhas Ativas</Link></li>
+            <li><Link to="/histórias">Histórias de Impacto</Link></li>
           </ul>
         </div>
         <div className='contato'>
@@ -46,9 +51,19 @@ function Footer() {
           <div className='email'>
             <FaEnvelope />
             <p>contato@cafecomafeto.org</p>
+
           </div>
+          <div className='instagram'>
+            <FaInstagram />
+            <p>@cafecomafeto</p>
+          </div>
+
         </div>
       </div>
+      <div className="footer-section">
+      
+      </div>
+      
       <div className='copy'>
         <FaRegCopyright />
         <p>2026 Café com Afeto. Todos os direitos reservados</p>
