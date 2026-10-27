@@ -1,6 +1,10 @@
+
+import { useNavigate } from 'react-router-dom'
 import './Login.css'
 
 function Login() {
+    const navigate = useNavigate()
+
     return (
         <section className="pagina-simples">
             <div className="pagina-simples-container">
@@ -10,27 +14,45 @@ function Login() {
                 <form className="formulario">
                     <div className="campo">
                         <label htmlFor="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail"/>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Digite seu e-mail"
+                        />
                     </div>
 
                     <div className="campo">
                         <label htmlFor="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha"/>
+                        <input
+                            type="password"
+                            name="senha"
+                            id="senha"
+                            placeholder="Digite sua senha"
+                        />
                     </div>
 
                     <div className="botoes">
-                        <button type="submit" className="botao">Entrar</button>
-                        <button type="button" className="botao">Criar nova conta</button>
-                    </div>  
-                
- 
+                        <button type="submit" className="botao">
+                            Entrar
+                        </button>
+
+                        <button
+                            type="button"
+                            className="botao"
+                            onClick={() => navigate('/cadastro')}
+                        >
+                            Criar nova conta
+                        </button>
+                    </div>
+
                     <div className="esqueci-senha">
                         <a href="#">Esqueci minha senha</a>
                     </div>
-                </form>
 
+                </form>
             </div>
-        </section> 
+        </section>
     )
 }
 

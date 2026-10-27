@@ -1,0 +1,137 @@
+
+.pagina-simples {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.pagina-simples-container {
+    width: 100%;
+    max-width: 30rem;
+    text-align: center;
+}
+
+.pagina-simples-container h1 {
+    color: var(--texto-titulo);
+    margin-bottom: 1rem;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 170%;
+    max-width: 25rem;
+}
+
+.campo label {
+    color: var(--texto-corpo);
+    text-align: left;
+}
+
+.campo input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--bg-card);
+    color: var(--texto-corpo);
+}
+
+.campo input::placeholder {
+    color: var(--texto-corpo);
+    opacity: 0.75;
+}
+
+/* Campo de senha e botão de visualização */
+.campo-senha {
+    position: relative;
+    width: 100%;
+}
+
+.campo-senha input {
+    padding-right: 3rem;
+}
+
+.botao-olho {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+/* Botão Cadastrar */
+.botoes {
+    width: 170%;
+    max-width: 25rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.botao {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    background-color: var(--verde-principal);
+    color: var(--branco);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.botao:hover {
+    background-color: var(--verde-escuro);
+}
+
+/* Mensagens de validação */
+.mensagem-cadastro {
+    width: 170%;
+    max-width: 25rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.75rem;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.mensagem-cadastro.sucesso {
+    color: #2e7d32;
+    background-color: #e3f2e5;
+}
+
+.mensagem-cadastro.erro {
+    color: #b42318;
+    background-color: #fdecea;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 480px) {
+    .campo,
+    .botoes,
+    .mensagem-cadastro {
+        width: 100%;
+    }
+}
