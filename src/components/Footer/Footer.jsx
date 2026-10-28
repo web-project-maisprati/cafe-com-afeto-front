@@ -25,7 +25,7 @@ function Footer() {
             <li><Link to="/sobre">Sobre Nós</Link></li>
             <li><Link to="/missão">Nossa Missão</Link></li>
             <li><Link to="/transparencia">Transparência</Link></li>
-            <li><Link to="/Prestação de contas">Prestação de Contas</Link></li>
+            <li><Link to="/Prestação de contas">Prestação de Contas</Link></li>//
           </ul>
         </div>
         <div className='footer-menu-ajuda'>
@@ -66,7 +66,7 @@ function Footer() {
       
       <div className='copy'>
         <FaRegCopyright />
-        <p>2026 Café com Afeto. Todos os direitos reservados</p>
+        <p>2026 Café com Afeto.Todos os direitos reservados</p>
       </div>
     </footer>
   )
