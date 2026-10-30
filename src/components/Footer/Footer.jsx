@@ -25,15 +25,14 @@ function Footer() {
             <li><Link to="/sobre">Sobre Nós</Link></li>
             <li><Link to="/missão">Nossa Missão</Link></li>
             <li><Link to="/transparencia">Transparência</Link></li>
-            <li><Link to="/Prestação de contas">Prestação de Contas</Link></li>//
+            <li><Link to="/Prestação de contas">Prestação de Contas</Link></li>
           </ul>
         </div>
         <div className='footer-menu-ajuda'>
           <strong>Como Ajudar</strong>
           <ul>
             <li><Link to="/doacao">Fazer uma Doação</Link></li>
-            <li><Link to="/voluntario">Ser voluntário</Link></li>
-            
+            <li><Link to="/voluntario">Ser voluntário</Link></li>            
             <li><Link to="/home">Campanhas Ativas</Link></li>
             <li><Link to="/histórias">Histórias de Impacto</Link></li>
           </ul>
