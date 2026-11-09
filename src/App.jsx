@@ -6,9 +6,12 @@ import Doacao from './pages/Doacao/Doacao'
 import Sobre from './pages/Sobre/Sobre'
 import Erro from './pages/Erro/Erro'
 
+
+
 function App() {
   return (
     <BrowserRouter>
+    
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -18,6 +21,7 @@ function App() {
           <Route path="*" element={<Erro />} />
         </Route>
       </Routes>
+     
     </BrowserRouter>
   )
 }
