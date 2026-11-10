@@ -32,9 +32,9 @@ function Footer() {
           <strong>Como Ajudar</strong>
           <ul>
             <li><Link to="/doacao">Fazer uma Doação</Link></li>
-            <li><Link to="/voluntario">Ser voluntário</Link></li>            
-            <li><Link to="/home">Campanhas Ativas</Link></li>
-            <li><Link to="/histórias">Histórias de Impacto</Link></li>
+            <li><Link to="/voluntario">Seja um voluntário</Link></li>            
+            <li><Link to="/campanhas">Nossas Campanhas</Link></li>
+            <li><Link to="/histórias">Histórias</Link></li>
           </ul>
         </div>
         <div className='contato'>

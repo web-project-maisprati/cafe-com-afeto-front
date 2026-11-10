@@ -1,0 +1,21 @@
+.pagina-simples {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.pagina-simples-container {
+    text-align: center;
+    max-width: 30rem;
+}
+
+.pagina-simples-container h1 {
+    color: var(--texto-titulo);
+    margin-bottom: 1rem;
+}
+
+.pagina-simples-container p {
+    color: var(--texto-corpo);
+}
