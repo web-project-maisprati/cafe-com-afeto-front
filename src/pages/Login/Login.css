@@ -1,3 +1,4 @@
+
 .pagina-simples {
     min-height: 60vh;
     display: flex;
@@ -9,6 +10,7 @@
 .pagina-simples-container {
     text-align: center;
     max-width: 30rem;
+    width: 100%;
 }
 
 .pagina-simples-container h1 {
@@ -38,7 +40,7 @@
 
 .campo label {
     text-align: left;
-    color: #000;
+    color: var(--texto-corpo);
 }
 
 .campo input {
@@ -47,28 +49,58 @@
     border: 1px solid #ccc;
     border-radius: 0.4rem;
     box-sizing: border-box;
-
     font-family: inherit;
     font-size: 1rem;
+    background-color: var(--bg-card);
+    color: var(--texto-corpo);
+}
+
+.campo-senha {
+    position: relative;
+    width: 100%;
+}
+
+.campo-senha input {
+    padding-right: 3rem;
+}
+
+.botao-olho {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    background: transparent;
+    border: none;
+    color: var(--texto-corpo);
+    cursor: pointer;
+}
+
+.botao-olho:hover {
+    color: var(--verde-principal);
+}
+
+.botao-olho svg {
+    display: block;
 }
 
 .botao {
     flex: 1;
     padding: 0.8rem;
-
     border: none;
     border-radius: 0.4rem;
     cursor: pointer;
-
     background-color: #2e7d32;
     color: #fff;
-
     font-family: inherit;
     font-size: 1rem;
 }
 
 .botao:hover {
-    background-color: #1b5e20
+    background-color: #1b5e20;
 }
 
 .botoes {
@@ -85,7 +117,7 @@
 }
 
 .esqueci-senha a {
-    color: #000;
+    color: var(--texto-corpo);
     text-decoration: none;
     font-family: inherit;
     font-size: 1rem;
@@ -93,4 +125,11 @@
 
 [data-theme="dark"] .esqueci-senha a {
     color: #fff;
+}
+
+@media (max-width: 480px) {
+    .campo,
+    .botoes {
+        width: 100%;
+    }
 }
