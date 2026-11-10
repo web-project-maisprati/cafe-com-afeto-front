@@ -1,5 +1,6 @@
 
 import { useState } from 'react'
+import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom'
 import './Login.css'
 
@@ -7,10 +8,14 @@ function Login() {
     const navigate = useNavigate()
     const [mostrarSenha, setMostrarSenha] = useState(false)
 
+    function handleEsqueciSenha(event) {
+        event.preventDefault()
+        toast.info('Página em desenvolvimento!')
+    }
+
     return (
         <section className="pagina-simples">
             <div className="pagina-simples-container">
-
                 <h1>Entrar</h1>
 
                 <form className="formulario">
@@ -41,7 +46,11 @@ function Login() {
                                 type="button"
                                 className="botao-olho"
                                 onClick={() => setMostrarSenha(!mostrarSenha)}
-                                aria-label={mostrarSenha ? 'Ocultar senha' : 'Mostrar senha'}
+                                aria-label={
+                                    mostrarSenha
+                                        ? 'Ocultar senha'
+                                        : 'Mostrar senha'
+                                }
                             >
                                 {mostrarSenha ? (
                                     <svg
@@ -95,9 +104,10 @@ function Login() {
                     </div>
 
                     <div className="esqueci-senha">
-                        <a href="#">Esqueci minha senha</a>
+                        <a href="#" onClick={handleEsqueciSenha}>
+                            Esqueci minha senha
+                        </a>
                     </div>
-
                 </form>
             </div>
         </section>
