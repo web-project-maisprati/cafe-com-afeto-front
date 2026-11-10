@@ -42,14 +42,10 @@ function Header() {
                     <ul>
                         <li><Link to="/" onClick={() => setMenuAberto(false)}>Home</Link></li>
                         <li><Link to="/doacao" onClick={() => setMenuAberto(false)}>Doar</Link></li>
-                        <li><Link to="/voluntario" onClick={() => setMenuAberto(false)}>Seja Voluntário</Link></li>
-                         <li><Link to="/campanhas" onClick={() => setMenuAberto(false)}>Nossas Campanhas</Link></li>
-                          <li><Link to="/historias" onClick={() => setMenuAberto(false)}>Histórias</Link></li>
-
                         
-                        
-                        
-                        
+                        <li className="em-breve">Seja Voluntario</li>
+                        <li className="em-breve">Campanhas</li>
+                        <li className="em-breve">Historias</li>
                     </ul>
                     <button
                         className="tema-toggle"
