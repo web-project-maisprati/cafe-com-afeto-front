@@ -1,15 +1,15 @@
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 import Layout from './components/Layout/Layout'
 import Home from './pages/Home/Home'
 import Login from './pages/Login/Login'
+import Cadastro from './pages/Cadastro/Cadastro'
 import Doacao from './pages/Doacao/Doacao'
 import Sobre from './pages/Sobre/Sobre'
-import Voluntario from './pages/Voluntario/Voluntario'
-import Campanhas from './pages/Campanhas/Campanhas'
-import Historias from './pages/Historias/Historias'
 import Erro from './pages/Erro/Erro'
-
-
 
 function App() {
   return (
@@ -21,15 +21,17 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/doacao" element={<Doacao />} />
           <Route path='/sobre' element={<Sobre />} />
-          <Route path='/voluntario' element={<Voluntario />} />
-          <Route path='/campanhas' element={<Campanhas />} />
-          <Route path='/historias' element={<Historias />} />
           <Route path="*" element={<Erro />} />
         </Route>
-      </Routes>
-     
-    </BrowserRouter>
-  )
+        </Routes>
+
+            <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                theme="colored"
+            />
+        </BrowserRouter>
+    )
 }
 
 export default App
