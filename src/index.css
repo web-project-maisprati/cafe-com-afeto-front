@@ -14,6 +14,7 @@
     --bg-card: #ffffff;
     --texto-titulo: #111111;
     --texto-corpo: #56545c;
+    --texto-link: #2e7d32;
 
     --fonte-principal: 'Poppins', sans-serif;
 }
@@ -26,6 +27,9 @@
     --bg-card: #1e1e1e;
     --texto-titulo: #f5f5f5;
     --texto-corpo: #b8b8b8;
+    --texto-link: #7cd684;
+
+    --branco: #f5f5f5;
 }
 
 * {
@@ -39,4 +43,13 @@ body {
     background-color: var(--bg-pagina);
     color: var(--texto-corpo);
     transition: background-color 0.3s, color 0.3s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
