@@ -24,17 +24,25 @@ function Footer() {
           <ul>
             <li><Link to="/sobre">Sobre Nós</Link></li>
             <li><Link to="/missão">Nossa Missão</Link></li>
-            <li><Link to="/transparencia">Transparência</Link></li>
-            <li><Link to="/Prestação de contas">Prestação de Contas</Link></li>
+            <li><Link to="/transparencia" onClick={(e) => e.preventDefault()}
+              style={{ pointerEvents: 'none', opacity: 0.5, cursor: 'default' }}
+            >Transparência</Link></li>
+            <li><Link to="/Prestação de contas" onClick={(e) => e.preventDefault()}
+              style={{ pointerEvents: 'none', opacity: 0.5, cursor: 'default' }}
+            >Prestação de Contas</Link></li>
           </ul>
         </div>
         <div className='footer-menu-ajuda'>
           <strong>Como Ajudar</strong>
           <ul>
             <li><Link to="/doacao">Fazer uma Doação</Link></li>
-            <li><Link to="/voluntario">Seja um voluntário</Link></li>            
-            <li><Link to="/campanhas">Nossas Campanhas</Link></li>
-            <li><Link to="/histórias">Histórias</Link></li>
+            <li><Link to="/voluntario">Seja um voluntário</Link></li>
+            <li><Link to="/campanhas" onClick={(e) => e.preventDefault()}
+              style={{ pointerEvents: 'none', opacity: 0.5, cursor: 'default' }}
+            >Nossas Campanhas</Link></li>
+            <li><Link to="/histórias" onClick={(e) => e.preventDefault()}
+              style={{ pointerEvents: 'none', opacity: 0.5, cursor: 'default' }}
+            >Histórias</Link></li>
           </ul>
         </div>
         <div className='contato'>
@@ -60,9 +68,9 @@ function Footer() {
         </div>
       </div>
       <div className="footer-section">
-      
+
       </div>
-      
+
       <div className='copy'>
         <FaRegCopyright />
         <p>2026 Café com Afeto.Todos os direitos reservados</p>
