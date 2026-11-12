@@ -58,7 +58,11 @@ function Header() {
               </Link>
             </li>
 
-            <li className="/sobrenos">Sobre Nós</li>
+            <li>
+              <Link to="/sobre" onClick={() => setMenuAberto(false)}>
+                Sobre Nós
+              </Link>
+            </li>
           </ul>
           <button
             className="tema-toggle"
