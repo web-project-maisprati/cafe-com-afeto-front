@@ -1,265 +1,312 @@
-.pagina-simples {
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 1rem;
+.cadastro-pagina {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
 }
 
-.pagina-simples-container {
-    width: 100%;
-    max-width: 30rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cadastro-container {
+  width: 100%;
+  max-width: 36rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.pagina-simples-container h1 {
-    color: var(--texto-titulo);
-    margin-bottom: 2rem;
+.cadastro-header {
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
-.secao-participar-centralizada {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    max-width: 25rem;
-    margin: 0 auto;
+.cadastro-header h1 {
+  color: var(--texto-titulo);
+  margin: 0 0 0.5rem;
 }
 
-.titulo-participar {
-    color: var(--texto-corpo);
-    text-align: center;
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: 500;
+.cadastro-header p {
+  color: var(--texto-corpo);
+  margin: 0;
+  line-height: 1.5;
+  opacity: 0.85;
 }
 
-.opcoes-participar {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
+.cadastro-formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.card-participar {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 1.5rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    background-color: var(--bg-card);
-    cursor: pointer;
-    text-align: center;
-    font-family: inherit;
-    transition: all 0.2s ease;
+.cadastro-selecao-participante {
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
-.card-participar:hover {
-    border-color: #8c3a2b;
-    transform: translateY(-2px);
+.cadastro-selecao-participante legend {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  color: var(--texto-titulo);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
 }
 
-.card-participar .icon {
-    font-size: 2rem;
+.cadastro-opcoes-participar {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
 }
 
-.texto-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+.cadastro-card-participar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.6rem;
+  background-color: var(--bg-card);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: all 0.2s ease;
 }
 
-.texto-card strong {
-    color: var(--texto-titulo);
-    font-size: 1rem;
+.cadastro-card-participar:hover {
+  border-color: var(--verde-principal);
+  transform: translateY(-2px);
 }
 
-.texto-card span {
-    color: var(--texto-corpo);
-    font-size: 0.75rem;
-    opacity: 0.8;
+.cadastro-card-participar.selecionado {
+  border: 2px solid var(--verde-principal);
+  background-color: rgba(0, 128, 0, 0.06);
+  padding: calc(1.1rem - 1px);
 }
 
-.formulario {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    animation: subirFormulario 0.4s ease-out forwards;
+.cadastro-card-participar:focus-visible {
+  outline: 3px solid var(--verde-principal);
+  outline-offset: 3px;
 }
 
-.campo {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    width: 100%;
-    max-width: 25rem;
+.cadastro-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
 }
 
-.campo label {
-    color: var(--texto-corpo);
-    text-align: left;
+.cadastro-texto-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
-.campo input {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 0.4rem;
-    box-sizing: border-box;
-    font-family: inherit;
-    font-size: 1rem;
-    background-color: var(--bg-card);
-    color: var(--texto-corpo);
+.cadastro-texto-card strong {
+  color: var(--texto-titulo);
+  font-size: 0.95rem;
 }
 
-.campo input::placeholder {
-    color: var(--texto-corpo);
-    opacity: 0.75;
+.cadastro-texto-card span {
+  color: var(--texto-corpo);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  opacity: 0.85;
 }
 
-.campo-senha {
-    position: relative;
-    width: 100%;
+.cadastro-campos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  gap: 1rem;
 }
 
-.campo-senha input {
-    padding-right: 3rem;
+.cadastro-localizacao {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
 }
 
-.botao-olho {
-    position: absolute;
-    right: 0.75rem;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0.25rem;
-    font-size: 1.1rem;
-    line-height: 1;
+.cadastro-campo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  gap: 0.4rem;
 }
 
-.botoes {
-    width: 100%;
-    max-width: 25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+.cadastro-campo label {
+  color: var(--texto-corpo);
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-.botao {
-    width: 100%;
-    padding: 0.8rem;
-    border: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    background-color: var(--verde-principal);
-    color: var(--branco);
-    font-family: inherit;
-    font-size: 1rem;
-    transition: background-color 0.2s ease;
+.cadastro-campo input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: var(--bg-card);
+  color: var(--texto-corpo);
 }
 
-.botao:hover {
-    background-color: var(--verde-escuro);
+.cadastro-campo input::placeholder {
+  color: var(--texto-corpo);
+  opacity: 0.55;
 }
 
-.botao-voltar {
-    width: 100%;
-    padding: 0.6rem;
-    border: 1px solid #ccc;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    background-color: transparent;
-    color: var(--texto-corpo);
-    font-family: inherit;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
+.cadastro-campo input:focus {
+  outline: none;
+  border-color: var(--verde-principal);
+  box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.1);
 }
 
-.botao-voltar:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+.cadastro-campo-senha {
+  position: relative;
+  width: 100%;
+}
+
+.cadastro-campo-senha input {
+  padding-right: 3rem;
+}
+
+.cadastro-botao-olho {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--texto-corpo);
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.cadastro-botao-olho:hover {
+  color: var(--verde-principal);
+}
+
+.cadastro-botoes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cadastro-botao {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  background-color: var(--verde-principal);
+  color: var(--branco);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.cadastro-botao:hover:not(:disabled) {
+  background-color: var(--verde-escuro);
+}
+
+.cadastro-botao:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.cadastro-botao:focus-visible,
+.cadastro-login button:focus-visible,
+.cadastro-botao-olho:focus-visible {
+  outline: 3px solid var(--verde-principal);
+  outline-offset: 3px;
+}
+
+.cadastro-login {
+  color: var(--texto-corpo);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.cadastro-login button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--verde-principal);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cadastro-login button:hover {
+  text-decoration: underline;
 }
 
 .mensagem-cadastro {
-    width: 100%;
-    max-width: 25rem;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0.75rem;
-    border-radius: 0.4rem;
-    font-size: 0.9rem;
-    text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.85rem;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 .mensagem-cadastro.sucesso {
-    color: #2e7d32;
-    background-color: #e3f2e5;
+  color: #2e7d32;
+  background-color: #e3f2e5;
 }
 
 .mensagem-cadastro.erro {
-    color: #b42318;
-    background-color: #fdecea;
+  color: #b42318;
+  background-color: #fdecea;
 }
 
-.pagina-desenvolvimento {
-    width: 100%;
-    max-width: 25rem;
-    padding: 2.5rem 1.5rem;
-    border: 1px dashed #ccc;
-    border-radius: 0.5rem;
-    background-color: var(--bg-card);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    animation: subirFormulario 0.4s ease-out forwards;
-}
-
-.pagina-desenvolvimento h2 {
-    color: var(--texto-titulo);
-    font-size: 1.3rem;
-    margin: 0;
-}
-
-.pagina-desenvolvimento p {
-    color: var(--texto-corpo);
-    font-size: 0.95rem;
-    line-height: 1.5;
-    opacity: 0.8;
-    margin: 0;
-}
-
-.campo input:-webkit-autofill,
-.campo input:-webkit-autofill:hover, 
-.campo input:-webkit-autofill:focus {
-    -webkit-text-fill-color: var(--texto-corpo);
-    -webkit-box-shadow: 0 0 0px 1000px var(--bg-card) inset;
-}
-
-@keyframes subirFormulario {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.cadastro-campo input:-webkit-autofill,
+.cadastro-campo input:-webkit-autofill:hover,
+.cadastro-campo input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--texto-corpo);
+  -webkit-box-shadow: 0 0 0 1000px var(--bg-card) inset;
 }
 
 @media (max-width: 480px) {
-    .opcoes-participar {
-        flex-direction: column;
-        gap: 0.75rem;
-    }
-}
+  .cadastro-pagina {
+    padding: 2rem 1rem;
+  }
 
+  .cadastro-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .cadastro-opcoes-participar {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .cadastro-card-participar {
+    padding: 1rem;
+  }
+
+  .cadastro-card-participar.selecionado {
+    padding: calc(1rem - 1px);
+  }
+
+  .cadastro-localizacao {
+    grid-template-columns: 1fr;
+  }
+}

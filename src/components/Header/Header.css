@@ -1,162 +1,221 @@
 .header {
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .container {
-    width: 80%;
-    max-width: 1200px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: var(--cinza-texto) 1px solid;
+  width: 90%;
+  max-width: 1400px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--cinza-texto) 1px solid;
 }
 
 .logo strong {
-    font-size: 1.5rem;
-    color: var(--texto-titulo);
-    white-space: nowrap;
+  font-size: 1.5rem;
+  color: var(--texto-titulo);
+  white-space: nowrap;
 }
 
 .menu-hamburguer {
-    display: none;
-    background-color: transparent;
-    border: none;
-    color: var(--texto-titulo);
-    font-size: 1.5rem;
-    cursor: pointer;
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: var(--texto-titulo);
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .tema-toggle {
-    background-color: transparent;
-    border: 1px solid var(--cinza-texto);
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--texto-titulo);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: transparent;
+  border: 1px solid var(--cinza-texto);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--texto-titulo);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .tema-toggle:hover {
-    background-color: var(--verde-principal);
-    border-color: var(--verde-principal);
-    color: var(--branco);
+  background-color: var(--verde-principal);
+  border-color: var(--verde-principal);
+  color: var(--branco);
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 .menu ul {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu ul li {
-    padding: 0.625rem 0.9375rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
+  padding: 0.625rem 0.9375rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .menu ul li:hover {
-    background-color: var(--verde-principal);
-    color: var(--branco);
+  background-color: var(--verde-principal);
+  color: var(--branco);
 }
 
 .menu ul li.em-breve {
-    cursor: default;
-    opacity: 0.6;
+  cursor: default;
+  opacity: 0.6;
 }
 
 .menu ul li.em-breve:hover {
-    background-color: transparent;
-    color: inherit;
+  background-color: transparent;
+  color: inherit;
 }
 
 .menu ul li a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .btn-entrar {
-    background-color: var(--verde-principal);
-    border: none;
-    border-radius: 10px;
-    color: var(--branco);
-    height: 2.5rem;
-    width: 4.375rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: var(--verde-principal);
+  border: none;
+  border-radius: 10px;
+  color: var(--branco);
+  height: 2.5rem;
+  width: 4.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn-entrar:hover {
-    background-color: var(--verde-escuro);
+  background-color: var(--verde-escuro);
+}
+
+.usuario-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.usuario-icone {
+  background-color: transparent;
+  border: 1px solid var(--cinza-texto);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--texto-titulo);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.usuario-icone:hover {
+  background-color: var(--verde-principal);
+  border-color: var(--verde-principal);
+  color: var(--branco);
+}
+
+.btn-sair {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background-color: var(--bg-pagina);
+  border: 1px solid var(--cinza-texto);
+  border-radius: 8px;
+  padding: 0.625rem 1.25rem;
+  color: var(--texto-titulo);
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 30;
+}
+
+.btn-sair:hover {
+  background-color: var(--verde-principal);
+  border-color: var(--verde-principal);
+  color: var(--branco);
 }
 
 @media (max-width: 1024px) {
-    .menu-hamburguer {
-        display: flex;
-        align-items: center;
-    }
+  .menu-hamburguer {
+    display: flex;
+    align-items: center;
+  }
 
-    .menu {
-        display: none;
-        position: absolute;
-        top: 5rem;
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 1rem;
-        background-color: var(--bg-pagina);
-        border-bottom: 1px solid var(--cinza-texto);
-        padding: 1.5rem;
-        z-index: 20;
-    }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    background-color: var(--bg-pagina);
+    border-bottom: 1px solid var(--cinza-texto);
+    padding: 1.5rem;
+    z-index: 20;
+  }
 
-    .menu.menu-aberto {
-        display: flex;
-    }
+  .menu.menu-aberto {
+    display: flex;
+  }
 
-    .menu ul {
-        flex-direction: column;
-        align-items: stretch;
-        width: 100%;
-        gap: 0.5rem;
-    }
+  .menu ul {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.5rem;
+  }
 
-    .menu ul li {
-        text-align: center;
-    }
+  .menu ul li {
+    text-align: center;
+  }
 
-    .btn-entrar {
-        width: 100%;
-    }
+  .btn-entrar {
+    width: 100%;
+  }
 
-    .tema-toggle {
-        width: 100%;
-        border-radius: 10px;
-    }
+  .tema-toggle {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .usuario-menu {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btn-sair {
+    position: static;
+    width: 100%;
+  }
 }
