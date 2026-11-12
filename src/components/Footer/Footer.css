@@ -7,14 +7,17 @@
     background-color: var(--preto);
     padding: 1.875rem 0;
     gap: 0.9375rem;
+    
 }
 
 .footer-container {
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    color: var(--branco);
+    
 }
 
 .footer-logo{
@@ -24,7 +27,8 @@
 }
 
 .footer-logo strong, .footer-menu, .footer-menu-ajuda, .contato {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    justify-content: space-between;
     color: var(--branco);
 }
 
@@ -38,7 +42,12 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+   
+    
+    
 }
+
+
 
 .footer-menu ul {
     font-size: 1rem;
@@ -47,6 +56,9 @@
     align-items: center;
     flex-direction: column;
     list-style: none;
+    
+    
+    
 }
 
 .footer-menu ul li {
@@ -54,12 +66,16 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    color: var(--branco);
+     color: var(--branco);
+    
 }
 
 .footer-menu ul li:hover {
     background-color: var(--verde-principal);
     color: var(--preto);
+    
+    
+
 }
 
 .footer-menu button {
@@ -71,10 +87,12 @@
     width: 4.375rem;
     cursor: pointer;
     transition: 0.3s;
+    
 }
 
 .footer-menu button:hover {
     background-color: var(--verde-escuro);
+    
 }
 
 .footer-menu-ajuda{
@@ -82,6 +100,11 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    justify-content: space-between;
+    color: var(--branco);
+    
+    
+    
 }
 
 .footer-menu-ajuda ul {
@@ -91,6 +114,8 @@
     align-items: center;
     flex-direction: column;
     list-style: none;
+    color: var(--branco);
+    
 }
 
 .footer-menu-ajuda ul li {
@@ -119,6 +144,7 @@
 
 .footer-menu-ajuda button:hover {
     background-color: var(--verde-escuro);
+    
 }
 
 .contato{
@@ -126,6 +152,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .contato svg{
@@ -137,7 +164,7 @@
     font-size: 1rem;
 }
 
-.contato .local, .tel, .email{
+.contato .local, .tel, .email, .instagram{
     display: flex;
     justify-content: center;
     gap: 0.625rem;
@@ -152,6 +179,7 @@
     align-items: center;
     gap: 10px;
 }
+
 
 .copy p, .copy svg{
     color: var(--branco);

@@ -1,0 +1,252 @@
+.sobre-nos, 
+.nossa-historia {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nossa-historia {
+    background-color: var(--bg-secao);
+}
+
+.sobre-nos-container, 
+.nossa-historia-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nossa-historia-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--texto-corpo);
+    font-family: var(--fonte-principal);
+}
+
+.sobre-nos-text p,
+.missao-text p,
+.objetivo-text p {
+    color: var(--texto-corpo);
+    font-family: var(--fonte-principal);
+}
+
+.sobre-nos-text h1,
+.nossa-historia-text h1,
+.missao-objetivo-text h2,
+.nossos-valores-text h2 {
+    color: var(--texto-titulo);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+.sobre-nos-text strong,
+.nossa-historia-text strong,
+.missao-text strong,
+.objetivo-text strong,
+.missao-objetivo-text strong,
+.nossos-valores-text strong {
+    color: var(--verde-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.9rem;
+}
+
+.sobre-nos-image img, 
+.nossa-historia-image img {
+    max-width: 35rem;
+    height: 28rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.missao-objetivo {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.missao-objetivo-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.missao-objetivo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.missao-objetivo-cards {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.missao,
+.objetivo {
+    flex: 1;
+}
+
+.missao-objetivo svg {
+    width: 2rem;
+    height: 2rem;
+    color: var(--verde-principal);
+}
+
+.missao-text,
+.objetivo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nossos-valores {
+    width: 100%;
+    min-height: 70vh;
+    background-color: var(--bg-secao);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nossos-valores-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nossos-valores-cards {
+    display: flex;
+    gap: 2rem;
+}
+
+.valor-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nossos-valores-text h2,
+.valor-card h3 {
+    color: var(--texto-titulo);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+}
+
+.nossos-valores-text p,
+.valor-card p {
+    color: var(--texto-corpo);
+    font-family: var(--fonte-principal);
+    line-height: 1.6;
+}
+
+.valor-icon {
+    color: var(--verde-principal);
+}
+
+@media (max-width: 900px) {
+    .sobre-nos,
+    .nossa-historia,
+    .missao-objetivo,
+    .nossos-valores {
+        min-height: auto;
+        padding: 4rem 1.25rem;
+    }
+
+    .sobre-nos-container,
+    .nossa-historia-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nossa-historia-container {
+        flex-direction: column-reverse;
+    }
+
+    .sobre-nos-image img,
+    .nossa-historia-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .missao-objetivo-cards {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nossos-valores-cards {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .valor-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobre-nos,
+    .nossa-historia,
+    .missao-objetivo,
+    .nossos-valores {
+        padding: 3rem 1rem;
+    }
+
+    .sobre-nos-text h1,
+    .nossa-historia-text h1,
+    .missao-objetivo-text h2,
+    .nossos-valores-text h2 {
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    .sobre-nos-text strong,
+    .nossa-historia-text strong,
+    .missao-text strong,
+    .objetivo-text strong,
+    .missao-objetivo-text strong,
+    .nossos-valores-text strong {
+        font-size: 0.8rem;
+    }
+
+    .sobre-nos-text p,
+    .nossa-historia-text p,
+    .missao-text p,
+    .objetivo-text p,
+    .nossos-valores-text p,
+    .valor-card p {
+        font-size: 0.95rem;
+    }
+
+    .missao-objetivo svg,
+    .valor-icon {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+}

@@ -62,7 +62,7 @@ function Carousel() {
             <div className="carousel-container">
 
                 <div className="carousel-header">
-                    <h2>Nossas Campanhas</h2>
+                    <h2>NOSSAS AÇÕES</h2>
                     <p>Conheça as ações que estamos organizando para ajudar quem mais precisa.</p>
                 </div>
 
