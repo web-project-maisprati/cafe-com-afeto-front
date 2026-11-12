@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import apiRequest from "../../services/api";
+import { toast } from "react-toastify";
 import "./Cadastro.css";
 
 function Cadastro() {
@@ -82,8 +83,12 @@ function Cadastro() {
         }
       }, 2000);
     } catch (error) {
-      setMensagem(error.message);
-      setErro(true);
+      const mensagemErro =
+        error.message === "Failed to fetch"
+          ? "Não foi possível conectar ao servidor. Tente novamente."
+          : error.message || "Erro ao realizar cadastro.";
+
+      toast.error(mensagemErro);
     }
   }
 
